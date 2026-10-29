@@ -1,0 +1,38 @@
+[
+  {
+    "name": "search_studies",
+    "description": "Search EBI MetaboLights, the metabolomics (metabolite / small-molecule) study repository, by keyword — disease, metabolite, organism, or analytical technique (e.g. \"diabetes\", \"glucose NMR\", \"Homo sapiens LC-MS\"). Returns matching study accessions (e.g. MTBLS1) with name and a short description.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text query, e.g. \"type 2 diabetes urine NMR\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max studies to return (default 15, max 100)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_study",
+    "description": "Fetch metadata for a single MetaboLights study by its accession (e.g. \"MTBLS1\"): title, full description, and the organisms studied (species + tissue/part). Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "MetaboLights accession, e.g. \"MTBLS1\"."
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  }
+]
