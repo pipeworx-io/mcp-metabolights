@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-metabolights",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "MetaboLights MCP — EBI's metabolomics study repository.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "metabolights",
     "gatewaySlug": "metabolights",
-    "sourceHash": "v1-3e5c997c659055c274246b117b390e527ffeceda59abc12919d573fde533c7cc",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-06c586167ed0961442734a8022f27d5b79d7b71744ed8e8466f6a427cf5b8f15",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
